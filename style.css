@@ -1,0 +1,45 @@
+#header {
+	width: 400px;
+	position: fixed;
+	z-index: 2;
+}
+
+.colourBoxContainer {
+	width: 5%;
+	display: block;
+	float: left;
+}
+
+.colourBox {
+	cursor: pointer;
+	width: 100%;
+	padding-bottom: 100%;
+	display: block;
+	float: left;
+	transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.colourBox:hover {
+	transform:scale(2);
+	-moz-transform:scale(2);
+	border-radius:3px;
+	z-index:4;
+}
+
+#svg-root {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#svg-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	max-width: 99%;
+	max-height: 99%;
+	overflow: auto;
+}
