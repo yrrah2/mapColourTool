@@ -52,6 +52,6 @@ function makePNG() {
 	ctx.drawImage(img, 0, 0);
 	var png = canvas.toDataURL("image/png");
 	DOMURL.revokeObjectURL(png);
-	//ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	window.open(png);
 };
