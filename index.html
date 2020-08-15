@@ -18,14 +18,162 @@
 		<div class="colourBoxContainer" ><div class="colourBox" style="background-color: #000000" ></div></div>
 	</div>
 	<div style="width: 300px; position: fixed; right: 0; z-index: 2;">
-		<div>
+		<div style="text-align: center">
 			<button onclick="changeSize(2160)">2160p</button>
 			<button onclick="changeSize(1440)">1440p</button>
 			<button onclick="changeSize(720)">720p</button>
 			<button onclick="changeSize(480)">480p</button>
+			<div style="line-height: 2;">
+				<button onclick="makePNG()">load image in new tab</button>
+			</div>
 		</div>
-		<button onclick="makePNG()">Load Image in new tab</button>
-		<p>For now you must make changes to the map before loading image</p>
+		<div id="countryMenu">
+<div class="countryMenuItem">Afghanistan<div style="float: right; margin-right: 10px;" ><input id="af-input" style="width: 55px;" value="#c0c0c0"></input><button id="af-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Albania<div style="float: right; margin-right: 10px;" ><input id="al-input" style="width: 55px;" value="#c0c0c0"></input><button id="al-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Algeria<div style="float: right; margin-right: 10px;" ><input id="dz-input" style="width: 55px;" value="#c0c0c0"></input><button id="dz-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">American Samoa<div style="float: right; margin-right: 10px;" ><input id="as-input" style="width: 55px;" value="#c0c0c0"></input><button id="as-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Andorra<div style="float: right; margin-right: 10px;" ><input id="ad-input" style="width: 55px;" value="#c0c0c0"></input><button id="ad-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Anguilla<div style="float: right; margin-right: 10px;" ><input id="ai-input" style="width: 55px;" value="#c0c0c0"></input><button id="ai-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Armenia<div style="float: right; margin-right: 10px;" ><input id="am-input" style="width: 55px;" value="#c0c0c0"></input><button id="am-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Aruba<div style="float: right; margin-right: 10px;" ><input id="aw-input" style="width: 55px;" value="#c0c0c0"></input><button id="aw-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Austria<div style="float: right; margin-right: 10px;" ><input id="at-input" style="width: 55px;" value="#c0c0c0"></input><button id="at-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Bahrain<div style="float: right; margin-right: 10px;" ><input id="bh-input" style="width: 55px;" value="#c0c0c0"></input><button id="bh-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Barbados<div style="float: right; margin-right: 10px;" ><input id="bb-input" style="width: 55px;" value="#c0c0c0"></input><button id="bb-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Belarus<div style="float: right; margin-right: 10px;" ><input id="by-input" style="width: 55px;" value="#c0c0c0"></input><button id="by-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Belgium<div style="float: right; margin-right: 10px;" ><input id="be-input" style="width: 55px;" value="#c0c0c0"></input><button id="be-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Benin<div style="float: right; margin-right: 10px;" ><input id="bj-input" style="width: 55px;" value="#c0c0c0"></input><button id="bj-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Bermuda<div style="float: right; margin-right: 10px;" ><input id="bm-input" style="width: 55px;" value="#c0c0c0"></input><button id="bm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Bhutan<div style="float: right; margin-right: 10px;" ><input id="bt-input" style="width: 55px;" value="#c0c0c0"></input><button id="bt-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Bosnia and Herzegovina<div style="float: right; margin-right: 10px;" ><input id="ba-input" style="width: 55px;" value="#c0c0c0"></input><button id="ba-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Botswana<div style="float: right; margin-right: 10px;" ><input id="bw-input" style="width: 55px;" value="#c0c0c0"></input><button id="bw-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Bulgaria<div style="float: right; margin-right: 10px;" ><input id="bg-input" style="width: 55px;" value="#c0c0c0"></input><button id="bg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Burkina Faso<div style="float: right; margin-right: 10px;" ><input id="bf-input" style="width: 55px;" value="#c0c0c0"></input><button id="bf-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Burundi<div style="float: right; margin-right: 10px;" ><input id="bi-input" style="width: 55px;" value="#c0c0c0"></input><button id="bi-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Caribbean Netherlands<div style="float: right; margin-right: 10px;" ><input id="bq-input" style="width: 55px;" value="#c0c0c0"></input><button id="bq-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Cameroon<div style="float: right; margin-right: 10px;" ><input id="cm-input" style="width: 55px;" value="#c0c0c0"></input><button id="cm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Cayman Islands<div style="float: right; margin-right: 10px;" ><input id="ky-input" style="width: 55px;" value="#c0c0c0"></input><button id="ky-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Central African Republic<div style="float: right; margin-right: 10px;" ><input id="cf-input" style="width: 55px;" value="#c0c0c0"></input><button id="cf-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Chad<div style="float: right; margin-right: 10px;" ><input id="td-input" style="width: 55px;" value="#c0c0c0"></input><button id="td-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Colombia<div style="float: right; margin-right: 10px;" ><input id="co-input" style="width: 55px;" value="#c0c0c0"></input><button id="co-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Congo<div style="float: right; margin-right: 10px;" ><input id="cg-input" style="width: 55px;" value="#c0c0c0"></input><button id="cg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Co&#x0302te d'Ivoire<div style="float: right; margin-right: 10px;" ><input id="ci-input" style="width: 55px;" value="#c0c0c0"></input><button id="ci-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Curac&#807ao<div style="float: right; margin-right: 10px;" ><input id="cw-input" style="width: 55px;" value="#c0c0c0"></input><button id="cw-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Cyprus<div style="float: right; margin-right: 10px;" ><input id="cy-input" style="width: 55px;" value="#c0c0c0"></input><button id="cy-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Czech Republic<div style="float: right; margin-right: 10px;" ><input id="cz-input" style="width: 55px;" value="#c0c0c0"></input><button id="cz-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">DPR Korea<div style="float: right; margin-right: 10px;" ><input id="kp-input" style="width: 55px;" value="#c0c0c0"></input><button id="kp-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">DR Congo<div style="float: right; margin-right: 10px;" ><input id="cd-input" style="width: 55px;" value="#c0c0c0"></input><button id="cd-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Djibouti<div style="float: right; margin-right: 10px;" ><input id="dj-input" style="width: 55px;" value="#c0c0c0"></input><button id="dj-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Dominica<div style="float: right; margin-right: 10px;" ><input id="dm-input" style="width: 55px;" value="#c0c0c0"></input><button id="dm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Egypt<div style="float: right; margin-right: 10px;" ><input id="eg-input" style="width: 55px;" value="#c0c0c0"></input><button id="eg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">El Salvador<div style="float: right; margin-right: 10px;" ><input id="sv-input" style="width: 55px;" value="#c0c0c0"></input><button id="sv-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Ethiopia<div style="float: right; margin-right: 10px;" ><input id="et-input" style="width: 55px;" value="#c0c0c0"></input><button id="et-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">French Guiana<div style="float: right; margin-right: 10px;" ><input id="gf-input" style="width: 55px;" value="#c0c0c0"></input><button id="gf-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Gambia<div style="float: right; margin-right: 10px;" ><input id="gm-input" style="width: 55px;" value="#c0c0c0"></input><button id="gm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Georgia<div style="float: right; margin-right: 10px;" ><input id="ge-input" style="width: 55px;" value="#c0c0c0"></input><button id="ge-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Ghana<div style="float: right; margin-right: 10px;" ><input id="gh-input" style="width: 55px;" value="#c0c0c0"></input><button id="gh-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Gibraltar<div style="float: right; margin-right: 10px;" ><input id="gi-input" style="width: 55px;" value="#c0c0c0"></input><button id="gi-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Greece<div style="float: right; margin-right: 10px;" ><input id="gs-input" style="width: 55px;" value="#c0c0c0"></input><button id="gs-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Grenada<div style="float: right; margin-right: 10px;" ><input id="gd-input" style="width: 55px;" value="#c0c0c0"></input><button id="gd-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Guam<div style="float: right; margin-right: 10px;" ><input id="gu-input" style="width: 55px;" value="#c0c0c0"></input><button id="gu-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Guatemala<div style="float: right; margin-right: 10px;" ><input id="gt-input" style="width: 55px;" value="#c0c0c0"></input><button id="gt-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Guernsey<div style="float: right; margin-right: 10px;" ><input id="gg-input" style="width: 55px;" value="#c0c0c0"></input><button id="gg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Guyana<div style="float: right; margin-right: 10px;" ><input id="gy-input" style="width: 55px;" value="#c0c0c0"></input><button id="gy-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Holy See<div style="float: right; margin-right: 10px;" ><input id="va-input" style="width: 55px;" value="#c0c0c0"></input><button id="va-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Hungary<div style="float: right; margin-right: 10px;" ><input id="hu-input" style="width: 55px;" value="#c0c0c0"></input><button id="hu-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Iceland<div style="float: right; margin-right: 10px;" ><input id="is-input" style="width: 55px;" value="#c0c0c0"></input><button id="is-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">India<div style="float: right; margin-right: 10px;" ><input id="io-input" style="width: 55px;" value="#c0c0c0"></input><button id="io-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Iraq<div style="float: right; margin-right: 10px;" ><input id="iq-input" style="width: 55px;" value="#c0c0c0"></input><button id="iq-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Isle of Man<div style="float: right; margin-right: 10px;" ><input id="im-input" style="width: 55px;" value="#c0c0c0"></input><button id="im-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Jamaica<div style="float: right; margin-right: 10px;" ><input id="jm-input" style="width: 55px;" value="#c0c0c0"></input><button id="jm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Jersey<div style="float: right; margin-right: 10px;" ><input id="je-input" style="width: 55px;" value="#c0c0c0"></input><button id="je-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Jordan<div style="float: right; margin-right: 10px;" ><input id="jo-input" style="width: 55px;" value="#c0c0c0"></input><button id="jo-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Kenya<div style="float: right; margin-right: 10px;" ><input id="ke-input" style="width: 55px;" value="#c0c0c0"></input><button id="ke-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Kyrgyzstan<div style="float: right; margin-right: 10px;" ><input id="kg-input" style="width: 55px;" value="#c0c0c0"></input><button id="kg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Lao People's Democratic Republic<div style="float: right; margin-right: 10px;" ><input id="la-input" style="width: 55px;" value="#c0c0c0"></input><button id="la-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Latvia<div style="float: right; margin-right: 10px;" ><input id="lv-input" style="width: 55px;" value="#c0c0c0"></input><button id="lv-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Lebanon<div style="float: right; margin-right: 10px;" ><input id="lb-input" style="width: 55px;" value="#c0c0c0"></input><button id="lb-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Lesotho<div style="float: right; margin-right: 10px;" ><input id="ls-input" style="width: 55px;" value="#c0c0c0"></input><button id="ls-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Liberia<div style="float: right; margin-right: 10px;" ><input id="lr-input" style="width: 55px;" value="#c0c0c0"></input><button id="lr-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Libya<div style="float: right; margin-right: 10px;" ><input id="ly-input" style="width: 55px;" value="#c0c0c0"></input><button id="ly-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Liechtenstein<div style="float: right; margin-right: 10px;" ><input id="li-input" style="width: 55px;" value="#c0c0c0"></input><button id="li-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Lithuania<div style="float: right; margin-right: 10px;" ><input id="lt-input" style="width: 55px;" value="#c0c0c0"></input><button id="lt-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Luxembourg<div style="float: right; margin-right: 10px;" ><input id="lu-input" style="width: 55px;" value="#c0c0c0"></input><button id="lu-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Malawi<div style="float: right; margin-right: 10px;" ><input id="mw-input" style="width: 55px;" value="#c0c0c0"></input><button id="mw-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Maldives<div style="float: right; margin-right: 10px;" ><input id="mv-input" style="width: 55px;" value="#c0c0c0"></input><button id="mv-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Mali<div style="float: right; margin-right: 10px;" ><input id="ml-input" style="width: 55px;" value="#c0c0c0"></input><button id="ml-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Malta<div style="float: right; margin-right: 10px;" ><input id="mt-input" style="width: 55px;" value="#c0c0c0"></input><button id="mt-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Marshall Islands<div style="float: right; margin-right: 10px;" ><input id="mh-input" style="width: 55px;" value="#c0c0c0"></input><button id="mh-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Martinique<div style="float: right; margin-right: 10px;" ><input id="mq-input" style="width: 55px;" value="#c0c0c0"></input><button id="mq-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Mauritius<div style="float: right; margin-right: 10px;" ><input id="mu-input" style="width: 55px;" value="#c0c0c0"></input><button id="mu-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Mayotte<div style="float: right; margin-right: 10px;" ><input id="yt-input" style="width: 55px;" value="#c0c0c0"></input><button id="yt-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Micronesia (Federated States of)<div style="float: right; margin-right: 10px;" ><input id="fm-input" style="width: 55px;" value="#c0c0c0"></input><button id="fm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Monaco<div style="float: right; margin-right: 10px;" ><input id="mc-input" style="width: 55px;" value="#c0c0c0"></input><button id="mc-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Mongolia<div style="float: right; margin-right: 10px;" ><input id="mn-input" style="width: 55px;" value="#c0c0c0"></input><button id="mn-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Montenegro<div style="float: right; margin-right: 10px;" ><input id="me-input" style="width: 55px;" value="#c0c0c0"></input><button id="me-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Montserrat<div style="float: right; margin-right: 10px;" ><input id="ms-input" style="width: 55px;" value="#c0c0c0"></input><button id="ms-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Morocco<div style="float: right; margin-right: 10px;" ><input id="ma-input" style="width: 55px;" value="#c0c0c0"></input><button id="ma-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Namibia<div style="float: right; margin-right: 10px;" ><input id="na-input" style="width: 55px;" value="#c0c0c0"></input><button id="na-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Nauru<div style="float: right; margin-right: 10px;" ><input id="nr-input" style="width: 55px;" value="#c0c0c0"></input><button id="nr-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Nepal<div style="float: right; margin-right: 10px;" ><input id="np-input" style="width: 55px;" value="#c0c0c0"></input><button id="np-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Nicaragua<div style="float: right; margin-right: 10px;" ><input id="ni-input" style="width: 55px;" value="#c0c0c0"></input><button id="ni-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Niger<div style="float: right; margin-right: 10px;" ><input id="ne-input" style="width: 55px;" value="#c0c0c0"></input><button id="ne-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Niue<div style="float: right; margin-right: 10px;" ><input id="nu-input" style="width: 55px;" value="#c0c0c0"></input><button id="nu-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Norfolk Island<div style="float: right; margin-right: 10px;" ><input id="nf-input" style="width: 55px;" value="#c0c0c0"></input><button id="nf-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Northern Mariana Islands<div style="float: right; margin-right: 10px;" ><input id="mp-input" style="width: 55px;" value="#c0c0c0"></input><button id="mp-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Pakistan<div style="float: right; margin-right: 10px;" ><input id="pk-input" style="width: 55px;" value="#c0c0c0"></input><button id="pk-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Palau<div style="float: right; margin-right: 10px;" ><input id="pw-input" style="width: 55px;" value="#c0c0c0"></input><button id="pw-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Paraguay<div style="float: right; margin-right: 10px;" ><input id="py-input" style="width: 55px;" value="#c0c0c0"></input><button id="py-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Peru<div style="float: right; margin-right: 10px;" ><input id="pe-input" style="width: 55px;" value="#c0c0c0"></input><button id="pe-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Pitcairn<div style="float: right; margin-right: 10px;" ><input id="pn-input" style="width: 55px;" value="#c0c0c0"></input><button id="pn-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Poland<div style="float: right; margin-right: 10px;" ><input id="pl-input" style="width: 55px;" value="#c0c0c0"></input><button id="pl-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Puerto Rico<div style="float: right; margin-right: 10px;" ><input id="pr-input" style="width: 55px;" value="#c0c0c0"></input><button id="pr-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Qatar<div style="float: right; margin-right: 10px;" ><input id="qa-input" style="width: 55px;" value="#c0c0c0"></input><button id="qa-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Republic of Moldova<div style="float: right; margin-right: 10px;" ><input id="md-input" style="width: 55px;" value="#c0c0c0"></input><button id="md-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Romania<div style="float: right; margin-right: 10px;" ><input id="ro-input" style="width: 55px;" value="#c0c0c0"></input><button id="ro-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Rwanda<div style="float: right; margin-right: 10px;" ><input id="rw-input" style="width: 55px;" value="#c0c0c0"></input><button id="rw-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Saint Barthélemy<div style="float: right; margin-right: 10px;" ><input id="bl-input" style="width: 55px;" value="#c0c0c0"></input><button id="bl-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Saint Helena<div style="float: right; margin-right: 10px;" ><input id="sh-input" style="width: 55px;" value="#c0c0c0"></input><button id="sh-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Saint Lucia<div style="float: right; margin-right: 10px;" ><input id="lc-input" style="width: 55px;" value="#c0c0c0"></input><button id="lc-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Saint Martin (French part)<div style="float: right; margin-right: 10px;" ><input id="mf-input" style="width: 55px;" value="#c0c0c0"></input><button id="mf-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Saint Pierre and Miquelon<div style="float: right; margin-right: 10px;" ><input id="pm-input" style="width: 55px;" value="#c0c0c0"></input><button id="pm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Saint Vincent and the Grenadines<div style="float: right; margin-right: 10px;" ><input id="vc-input" style="width: 55px;" value="#c0c0c0"></input><button id="vc-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">San Marino<div style="float: right; margin-right: 10px;" ><input id="sm-input" style="width: 55px;" value="#c0c0c0"></input><button id="sm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Senegal<div style="float: right; margin-right: 10px;" ><input id="sn-input" style="width: 55px;" value="#c0c0c0"></input><button id="sn-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Serbia<div style="float: right; margin-right: 10px;" ><input id="rs-input" style="width: 55px;" value="#c0c0c0"></input><button id="rs-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Seychelles<div style="float: right; margin-right: 10px;" ><input id="sc-input" style="width: 55px;" value="#c0c0c0"></input><button id="sc-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Singapore<div style="float: right; margin-right: 10px;" ><input id="sg-input" style="width: 55px;" value="#c0c0c0"></input><button id="sg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Sint Maarten (Dutch part)<div style="float: right; margin-right: 10px;" ><input id="sx-input" style="width: 55px;" value="#c0c0c0"></input><button id="sx-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Slovakia<div style="float: right; margin-right: 10px;" ><input id="sk-input" style="width: 55px;" value="#c0c0c0"></input><button id="sk-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Slovenia<div style="float: right; margin-right: 10px;" ><input id="si-input" style="width: 55px;" value="#c0c0c0"></input><button id="si-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Somalia<div style="float: right; margin-right: 10px;" ><input id="so-input" style="width: 55px;" value="#c0c0c0"></input><button id="so-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">South Africa<div style="float: right; margin-right: 10px;" ><input id="za-input" style="width: 55px;" value="#c0c0c0"></input><button id="za-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">South Sudan<div style="float: right; margin-right: 10px;" ><input id="ss-input" style="width: 55px;" value="#c0c0c0"></input><button id="ss-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">State of Palestine<div style="float: right; margin-right: 10px;" ><input id="ps-input" style="width: 55px;" value="#c0c0c0"></input><button id="ps-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Sudan<div style="float: right; margin-right: 10px;" ><input id="sd-input" style="width: 55px;" value="#c0c0c0"></input><button id="sd-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Suriname<div style="float: right; margin-right: 10px;" ><input id="sr-input" style="width: 55px;" value="#c0c0c0"></input><button id="sr-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Swaziland<div style="float: right; margin-right: 10px;" ><input id="sz-input" style="width: 55px;" value="#c0c0c0"></input><button id="sz-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Switzerland<div style="float: right; margin-right: 10px;" ><input id="ch-input" style="width: 55px;" value="#c0c0c0"></input><button id="ch-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Syrian Arab Republic<div style="float: right; margin-right: 10px;" ><input id="sy-input" style="width: 55px;" value="#c0c0c0"></input><button id="sy-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Tajikistan<div style="float: right; margin-right: 10px;" ><input id="tj-input" style="width: 55px;" value="#c0c0c0"></input><button id="tj-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">The former Yugoslav Republic of Macedonia<div style="float: right; margin-right: 10px;" ><input id="mk-input" style="width: 55px;" value="#c0c0c0"></input><button id="mk-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Togo<div style="float: right; margin-right: 10px;" ><input id="tg-input" style="width: 55px;" value="#c0c0c0"></input><button id="tg-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Tokelau<div style="float: right; margin-right: 10px;" ><input id="tk-input" style="width: 55px;" value="#c0c0c0"></input><button id="tk-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Turkmenistan<div style="float: right; margin-right: 10px;" ><input id="tm-input" style="width: 55px;" value="#c0c0c0"></input><button id="tm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Tuvalu<div style="float: right; margin-right: 10px;" ><input id="tv-input" style="width: 55px;" value="#c0c0c0"></input><button id="tv-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Uganda<div style="float: right; margin-right: 10px;" ><input id="ug-input" style="width: 55px;" value="#c0c0c0"></input><button id="ug-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Ukraine<div style="float: right; margin-right: 10px;" ><input id="ua-input" style="width: 55px;" value="#c0c0c0"></input><button id="ua-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Uruguay<div style="float: right; margin-right: 10px;" ><input id="uy-input" style="width: 55px;" value="#c0c0c0"></input><button id="uy-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Uzbekistan<div style="float: right; margin-right: 10px;" ><input id="uz-input" style="width: 55px;" value="#c0c0c0"></input><button id="uz-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Wallis and Futuna Islands<div style="float: right; margin-right: 10px;" ><input id="wf-input" style="width: 55px;" value="#c0c0c0"></input><button id="wf-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Western Sahara<div style="float: right; margin-right: 10px;" ><input id="eh-input" style="width: 55px;" value="#c0c0c0"></input><button id="eh-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Zambia<div style="float: right; margin-right: 10px;" ><input id="zm-input" style="width: 55px;" value="#c0c0c0"></input><button id="zm-button" class="menuColourButton">save</button></div></div>
+<div class="countryMenuItem">Zimbabwe<div style="float: right; margin-right: 10px;" ><input id="zw-input" style="width: 55px;" value="#c0c0c0"></input><button id="zw-button" class="menuColourButton">save</button></div></div>
+
+		</div>
+		<div id="countryMenuOpener">
+			<div id="countryMenuOpenerText">open country menu</div>
+			<div id="countryMenuOpenerArrow">&#x25BE;</div>
+		</div>
 	</div>
 
 	<div id="svg-root">
