@@ -8,7 +8,15 @@ var DOMURL = self.URL || self.webkitURL || self;
 var img = new Image();
 
 img.src = "test";
-
+img.addEventListener("load", function () {
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	ctx.drawImage(img, 0, 0);
+	var png = canvas.toDataURL("image/png");
+	DOMURL.revokeObjectURL(png);
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	window.open(png);
+});
 var selectedColour = "rgb(93, 173, 226)"
 
 $(document).on("click", ".colourBox", function(event){
@@ -76,16 +84,10 @@ function changeSize(height) {
 	$("#worldmap").attr("width", width);
 };
 
+
+
 function makePNG() {
-	img.addEventListener("load", function () {
-		var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext("2d");
-		ctx.drawImage(img, 0, 0);
-		var png = canvas.toDataURL("image/png");
-		DOMURL.revokeObjectURL(png);
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		window.open(png);
-	});
+
 	var svgString = serializer.serializeToString(document.querySelector('svg'));
 	var svg = new Blob([svgString], {type: "image/svg+xml;charset=utf-8"});
 	var url = DOMURL.createObjectURL(svg);
