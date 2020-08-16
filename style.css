@@ -47,8 +47,9 @@
 #countryMenu {
 	display: none;
 	overflow: scroll;
-	height: 1000px;
-	padding-right: 20px;
+	max-height: 99%;
+	height: 900px;
+	padding-right: 5px;
 }
 
 .countryMenuItem {
