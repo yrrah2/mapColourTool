@@ -46,10 +46,9 @@
 
 #countryMenu {
 	display: none;
-	overflow: scroll;
+	overflow-y: scroll;
 	max-height: 99%;
-	height: 900px;
-	padding-right: 5px;
+	height: 850px;
 }
 
 .countryMenuItem {

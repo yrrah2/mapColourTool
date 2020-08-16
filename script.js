@@ -17,10 +17,10 @@ img.addEventListener("load", function () {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	window.open(png);
 });
-var selectedColour = "rgb(93, 173, 226)"
+var selectedColour = "#e74c3c"
 
 $(document).on("click", ".colourBox", function(event){
-	selectedColour = $(event.target).css("background-color");
+	selectedColour = $(event.target).hexBGColour();
 });
 
 const findOverarchingGroup = (svgID) => {
@@ -36,8 +36,9 @@ function changeSVGColour(countryID){
 	selectedCountry = countryID;
 	selectedCountry = findOverarchingGroup(selectedCountry);
 	selectedCountry = findOverarchingGroup(selectedCountry);
-	selectedCountryID = '.' + selectedCountry.attr("id");
-	$(selectedCountryID).css("fill", selectedColour);
+	selectedCountryID = selectedCountry.attr("id");
+	$('#' + selectedCountryID + "-input").val(selectedColour);
+	$('.' + selectedCountryID).css("fill", selectedColour);
 };
 
 const changeMenuColour = (buttonID) => {
@@ -69,10 +70,6 @@ const showCountryMenu = () => {
 	}
 };
 
-const setup = (country, colour) => {
-	$('.' + country).css("fill", colour);
-};
-
 function changeSize(height) {
 	var width = 2754 / 1398 * height;
 	var canvas = document.getElementById("canvas");
@@ -94,3 +91,17 @@ function makePNG() {
 	img.src = url;
 
 };
+
+$.fn.hexBGColour = function() {
+    var rgb = $(this).css('background-color');
+    if (!rgb) {
+        return '#FFFFFF'; //default color
+    }
+    var hex_rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/); 
+    function hex(x) {return ("0" + parseInt(x).toString(16)).slice(-2);}
+    if (hex_rgb) {
+        return "#" + hex(hex_rgb[1]) + hex(hex_rgb[2]) + hex(hex_rgb[3]);
+    } else {
+        return rgb; //ie8 returns background-color in hex format then it will make                 compatible, you can improve it checking if format is in hexadecimal
+    }
+}
